@@ -44,5 +44,8 @@
 }
 
 #park-polyline{
-    stroke: red;
+    stroke-width: .5px;
+    stroke: green;
+    fill: rgb(0, 255, 0, 0.1);
+    stroke-dasharray: 2px;
 }

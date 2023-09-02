@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class = "map-container">
+    <div class = "map">
+        <div class = "content">
+            <div class = "vector" id="park-boundary">
+                
+            </div>   
+            <div class = "raster" id="raster-4000000">
+                <img src="data/rasters/scale_4000000.webp">
+            </div>
+            <div class = "raster" id="raster-1000000">
+                <img src="data/rasters/scale_1000000.webp">
+            </div>
+            <div class = "raster" id="raster-200000">
+                <img src="data/rasters/scale_200000.webp">
+            </div>  
+        </div>
+    </div>
+</div>
+
+<script>
+let parkBoundary = document.getElementById("park-boundary");
+
+fetch("/data/vectors/park_boundary.svg")
+  .then(response => response.text())
+  .then(svg => parkBoundary.insertAdjacentHTML("afterbegin", svg));
+</script>
+
+</body>
+</html>

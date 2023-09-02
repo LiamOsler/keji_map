@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.map-container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.map{
+    transform: translate(calc(50% - 4000px / 2 ), calc(50% - 4000px / 2)) ;
+ }
+
+.content{
+    height: 100vh;
+    width: 100vw;
+}
+
+.raster{
+    position: absolute;
+}
+
+#raster-200000{
+    transform: scale(.05) ;
+}
+
+#raster-1000000{
+    transform: scale(.25) ;
+}
+
+#raster-4000000{
+
+}
+
+.vector{
+    position: absolute;
+
+}
+
+#park-boundary{
+    z-index: 5;
+}
+
+#park-polyline{
+    stroke: red;
+}

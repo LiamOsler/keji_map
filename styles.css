@@ -48,4 +48,16 @@
     stroke: green;
     fill: rgb(0, 255, 0, 0.1);
     stroke-dasharray: 2px;
+
+    animation: slide 1s linear infinite;
 }
+
+@keyframes slide{
+    0%{
+        stroke-dashoffset: 0px;
+    }
+    100%{
+        stroke-dashoffset: 4px;
+    }
+}
+

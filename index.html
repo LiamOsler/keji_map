@@ -33,6 +33,10 @@ let parkBoundary = document.getElementById("park-boundary");
 fetch("/data/vectors/park_boundary.svg")
   .then(response => response.text())
   .then(svg => parkBoundary.insertAdjacentHTML("afterbegin", svg));
+
+  fetch("/data/vectors/points.geojson")
+  .then(response => response.text())
+  .then(points => console.log(points));
 </script>
 
 </body>
